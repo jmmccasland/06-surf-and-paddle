@@ -3,5 +3,49 @@
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+$c-midnightblue: #083451;
+$c-transparentblue: rgba(7, 80, 135, 0.95);
+$c-white: #fff;
+
+.banner {
+  background: $c-transparentblue;
+  color: $c-white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: $c-midnightblue;
+
+  &__logo {
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      margin: 0 1rem;
+      text-transform: uppercase;
+
+      &:last-of-type {
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+// imports
 @import 'box-sizing';
 @import 'resets';
