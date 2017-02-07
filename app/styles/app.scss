@@ -15,10 +15,9 @@ $c-white: #fff;
 
 .banner {
   padding: 0 1rem;
-  background: $c-transparentblue;
+  background: linear-gradient($c-transparentblue, $c-transparentblue), url('/images/waves.jpg') no-repeat center center fixed;
   background-size: cover;
   color: $c-white;
-  border: 1px solid black;
 }
 
 .nav {
@@ -74,9 +73,9 @@ $c-white: #fff;
   &__subheader {
     border: 1px solid black;
     margin: 0;
-    font-size: .75rem;
+    font-size: 1rem;
     color: $c-midnightblue;
-    font-weight: 600;
+    font-weight: 500;
   }
 }
 
