@@ -8,7 +8,7 @@ $c-midnightblue: #083451;
 $c-transparentblue: rgba(7, 80, 135, 0.8);
 $c-white: #fff;
 $c-text-shadow: rgba(0, 0, 0, 0.25);
-$c-thinborder: #333;
+$c-thinborder: #ddd;
 
 .popularposts {
   margin-top: 5rem;
@@ -22,6 +22,17 @@ $c-thinborder: #333;
   text-transform: uppercase;
 }
 
+.popularposts__grid {
+  display: flex;
+  flex-direction: row;
+  color: $c-white;
+
+}
+
+.popularposts__grid-item-postpreview {
+  // width: calc(100% / 4);
+  background: $c-midnightblue;
+}
 
 
 
