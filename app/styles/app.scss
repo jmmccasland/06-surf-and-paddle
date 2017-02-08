@@ -10,68 +10,12 @@ $c-thinborder: #ddd;
 $c-clear: rgba(0, 0, 0, 0);
 $c-text-shadow: rgba(0, 0, 0, 0.5);
 
-$c-transparentblue: rgba(7, 80, 135, 0.7);
+$c-transparentblue: rgba(7, 80, 135, 0.8);
 $c-transparentred: rgba(197, 105, 106, 0.75);
 $c-transparentyellow: rgba(253, 204, 82, 0.65);
 
-$c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c-transparentyellow 100%);
+$c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c-transparentyellow);
 
-
-footer {
-  margin-top: 5rem;
-  border-top: 0.1rem $c-thinborder solid;
-  text-align: center;
-}
-
-.grid {
-  display: flex;
-
-  &__item {
-    width: calc(100% / 4);
-    margin: 0;
-  }
-}
-
-.preview {
-  position: relative;
-  color: darken($c-midnightblue, 5%);;
-
-  &:hover {
-    color: $c-white;
-  }
-
-  &__overlay {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $c-transparentblue;
-    z-index: 1;
-
-    &:hover {
-      background: $c-clear;
-    }
-  }
-
-  &__image {
-    width: 100%;
-    min-height: 21rem;
-    object-fit: cover;
-  }
-
-  &__title {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    margin: 0;
-    font-size: 1.75rem;
-    text-align: left;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-}
 
 
 
@@ -83,3 +27,4 @@ footer {
 @import 'box-sizing';
 @import 'resets';
 @import 'components/banner';
+@import 'components/popularposts';
