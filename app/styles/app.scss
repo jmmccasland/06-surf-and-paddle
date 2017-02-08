@@ -8,6 +8,24 @@ $c-midnightblue: #083451;
 $c-transparentblue: rgba(7, 80, 135, 0.8);
 $c-white: #fff;
 $c-text-shadow: rgba(0, 0, 0, 0.25);
+$c-thinborder: #333;
+
+.popularposts {
+  margin-top: 5rem;
+  border-top: thin solid $c-thinborder;
+  color: $c-midnightblue;
+}
+
+.popularposts__title {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
 
 
 // imports
