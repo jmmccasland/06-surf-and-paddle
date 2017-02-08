@@ -17,7 +17,16 @@ $c-transparentyellow: rgba(253, 204, 82, 0.65);
 $c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c-transparentyellow);
 
 
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
+}
 
+.main > * {
+  border: 1px solid red;
+}
 
 
 
