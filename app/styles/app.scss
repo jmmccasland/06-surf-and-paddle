@@ -5,6 +5,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
 $c-midnightblue: #083451;
+$c-blue: #106db3;
+$c-readablegrey: #444;
 $c-white: #fff;
 $c-thinborder: #ddd;
 $c-clear: rgba(0, 0, 0, 0);
@@ -20,7 +22,7 @@ $c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 1px solid black;
 }
 
@@ -28,6 +30,56 @@ $c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c
   border: 1px solid red;
 }
 
+
+.post {
+  // stuff
+}
+
+//Author styles
+.author {
+  display: flex;
+  align-items: center;
+  color: lighten($c-readablegrey, 50%);
+
+  & > * {
+    margin: 0  0.25rem;
+  }
+
+  &__image {
+    width: 1.5rem;
+    margin-left: 0;
+    border-radius: 50%;
+  }
+
+  &__name {
+    color: $c-blue;
+    text-decoration: none;
+  }
+
+  &__post-date {
+    margin-right: 0;
+    text-decoration: underline;
+  }
+}
+
+
+.sidebar  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
