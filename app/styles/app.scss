@@ -5,36 +5,38 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
 $c-midnightblue: #083451;
-$c-transparentblue: rgba(7, 80, 135, 0.8);
 $c-white: #fff;
-$c-text-shadow: rgba(0, 0, 0, 0.25);
 $c-thinborder: #ddd;
 
-.popularposts {
+$c-text-shadow: rgba(0, 0, 0, 0.25);
+
+$c-transparentblue: rgba(7, 80, 135, 0.75);
+$c-transparentred: rgba(197, 105, 106, 0.75);
+$c-transparentyellow: rgba(253, 204, 82, 0.65);
+
+
+footer {
   margin-top: 5rem;
-  border-top: thin solid $c-thinborder;
-  color: $c-midnightblue;
-}
-
-.popularposts__title {
-  font-size: 4rem;
+  border-top: 0.1rem $c-thinborder solid;
   text-align: center;
-  text-transform: uppercase;
 }
 
-.popularposts__grid {
+.grid {
   display: flex;
-  flex-direction: row;
-  color: $c-white;
 
+  &__item {
+    width: calc(100% / 4);
+    margin: 0;
+    min-height: 25rem;
+    background: red;
+  }
 }
 
-.popularposts__grid-item-postpreview {
-  // width: calc(100% / 4);
-  background: $c-midnightblue;
+.preview__image {
+  width: 100%;
+  min-height: 20rem;
+  object-fit: cover;
 }
-
-
 
 
 

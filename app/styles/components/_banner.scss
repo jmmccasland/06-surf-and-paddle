@@ -5,7 +5,7 @@
 
 .banner {
   padding: 0.5rem 1rem;
-  background: linear-gradient(45deg, $c-transparentblue, $c-transparentblue), url('/images/waves.jpg') no-repeat center center fixed;
+  background: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c-transparentyellow 100%), url('/images/waves.jpg') no-repeat center center fixed;
   background-size: cover;
   color: $c-white;
 }
