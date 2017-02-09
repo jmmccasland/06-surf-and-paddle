@@ -4,6 +4,7 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
 
+// COLORS
 $c-midnightblue: #083451;
 $c-blue: #106db3;
 $c-readablegrey: #444;
@@ -12,33 +13,66 @@ $c-thinborder: #ddd;
 $c-clear: rgba(0, 0, 0, 0);
 $c-text-shadow: rgba(0, 0, 0, 0.5);
 
-$c-transparentblue: rgba(7, 80, 135, 0.8);
+$c-transparentblue: rgba(7, 80, 135, 0.7);
 $c-transparentred: rgba(197, 105, 106, 0.75);
 $c-transparentyellow: rgba(253, 204, 82, 0.65);
 
-$c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c-transparentyellow);
+$c-sunset: linear-gradient(330deg, $c-transparentblue,  $c-transparentred 75%, $c-transparentyellow);
 
+// MEASUREMENTS
+$m-gutter: 2rem;
 
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 4rem;
   border: 1px solid black;
+  color: $c-readablegrey;
+
 }
 
 .main > * {
   border: 1px solid red;
 }
 
-
+// Post Styles
 .post {
-  // stuff
+  padding-right: $m-gutter;
+
+  &__title {
+    margin: 0;
+    color: $c-midnightblue;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    // font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  & p {
+    line-height: 1.75rem;
+  }
+
+  & > p {
+    margin-bottom: 2rem;
+  }
+
+  & > blockquote {
+    margin: 0 0 2rem 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+    border-left: solid $c-thinborder 0.15rem;
+
+    color: $c-blue;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
 }
 
 //Author styles
 .author {
   display: flex;
   align-items: center;
+  margin-top: 0;
   color: lighten($c-readablegrey, 50%);
 
   & > * {
@@ -62,11 +96,13 @@ $c-sunset: linear-gradient(330deg, $c-transparentblue, $c-transparentred 75%, $c
   }
 }
 
-
+// SIDEBAR
 .sidebar  {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding-left: $m-gutter;
 }
 
 .advert {
