@@ -1,0 +1,15 @@
+// SIDEBAR
+.sidebar  {
+  display: flex;
+  flex-direction: column;
+  margin-left: $m-gutter;
+  border: 1px solid black;
+}
+
+.advert {
+  align-self: center;
+  justify-content: center;
+}
+
+.sidebar-post {
+}

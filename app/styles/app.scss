@@ -17,28 +17,54 @@ $c-transparentblue: rgba(7, 80, 135, 0.7);
 $c-transparentred: rgba(197, 105, 106, 0.75);
 $c-transparentyellow: rgba(253, 204, 82, 0.65);
 
+// Gradients
 $c-sunset: linear-gradient(330deg, $c-transparentblue,  $c-transparentred 75%, $c-transparentyellow);
+$c-deepwater: linear-gradient($c-transparentblue, $c-transparentblue);
 
 // MEASUREMENTS
 $m-gutter: 2rem;
 
+//footer
+.footer {
+  padding: 2rem;
+  background: $c-midnightblue;
+  color: lighten($c-readablegrey, 30%);
+  font-size: 0.9rem;
+  font-weight: 300;
 
-// SIDEBAR
-.sidebar  {
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 65rem;
+    margin: 0 auto;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+
+    &-pic {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.footer-nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: $m-gutter;
-  border: 1px solid black;
+  justify-content: space-between;
+
+  &__item {
+    padding: 0 0.5rem;
+    border-right: 0.1rem solid lighten($c-readablegrey, 30%);
+
+    &:last-of-type {
+      border-right: 0;
+    }
+  }
 }
-
-.advert {
-}
-
-.sidebar-post {
-
-}
-
 
 
 
@@ -48,3 +74,5 @@ $m-gutter: 2rem;
 @import 'components/banner';
 @import 'components/popularposts';
 @import 'components/postmain';
+@import 'components/postsidebar';
+@import 'components/footer';
