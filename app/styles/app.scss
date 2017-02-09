@@ -6,8 +6,8 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 // COLORS
 $c-midnightblue: #083451;
-$c-blue: #106db3;
-$c-readablegrey: #444;
+$c-blue: #0979cd;
+$c-readablegrey: #666;
 $c-white: #fff;
 $c-thinborder: #ddd;
 $c-clear: rgba(0, 0, 0, 0);
@@ -27,13 +27,8 @@ $m-gutter: 2rem;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4rem;
-  border: 1px solid black;
   color: $c-readablegrey;
 
-}
-
-.main > * {
-  border: 1px solid red;
 }
 
 // Post Styles
@@ -68,12 +63,45 @@ $m-gutter: 2rem;
   }
 }
 
+// post buttons
+.btn {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+  background: lighten($c-readablegrey, 25%);
+  color: $c-white;
+  font-size: 1rem;
+  font-weight: 300;
+
+
+  &:hover {
+    background: $c-blue;
+
+    & > .fa {
+      background: $c-midnightblue;
+    }
+
+    & > span {
+      background: $c-blue;
+    }
+  }
+
+  & > .fa {
+    padding: 0.75rem;
+    background: $c-readablegrey;
+  }
+
+  & span {
+    padding: 0 0.75rem;
+  }
+}
+
+
 //Author styles
 .author {
   display: flex;
   align-items: center;
   margin-top: 0;
-  color: lighten($c-readablegrey, 50%);
+  color: lighten($c-readablegrey, 25%);
 
   & > * {
     margin: 0  0.25rem;
@@ -96,6 +124,9 @@ $m-gutter: 2rem;
     text-decoration: underline;
   }
 }
+
+
+
 
 // SIDEBAR
 .sidebar  {
