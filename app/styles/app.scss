@@ -24,9 +24,6 @@ $c-deepwater: linear-gradient($c-transparentblue, $c-transparentblue);
 // MEASUREMENTS
 $m-gutter: 5rem;
 
-
-
-
 // imports
 @import 'box-sizing';
 @import 'resets';
@@ -35,3 +32,15 @@ $m-gutter: 5rem;
 @import 'components/postmain';
 @import 'components/postsidebar';
 @import 'components/footer';
+
+
+// LAYOUT
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+}

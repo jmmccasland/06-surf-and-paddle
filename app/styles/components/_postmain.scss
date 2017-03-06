@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   margin-top: 4rem;
   color: $c-readablegrey;
 
@@ -9,7 +11,8 @@
 
 // Post Styles
 .post {
-  margin-right: $m-gutter;
+  flex-basis: calc(75% - 1rem);
+  margin-right: 1rem;
 
   &__title {
     margin: 0;

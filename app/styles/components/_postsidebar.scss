@@ -2,6 +2,7 @@
 .sidebar  {
   display: flex;
   flex-direction: column;
+  flex-basis: calc(25% - 1rem);
   color: lighten($c-readablegrey, 25%);
 }
 
