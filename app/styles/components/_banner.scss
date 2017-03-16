@@ -1,0 +1,94 @@
+
+
+.banner-section {
+  background: $c-deepwater, url('/images/waves.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: $c-white;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: $c-midnightblue;
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;;
+
+    &-item {
+      margin: 0 0.75rem;
+      text-transform: uppercase;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    } // &__item
+  } // &__list
+} // nav
+
+.fa-search {
+  padding-right: 0.25rem;
+  transform: scaleX(-1);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9.5rem 0;
+  text-align: center;
+
+  &__header {
+    margin: 0;
+    font-size: 6.5rem;
+    font-weight: 400;
+    text-shadow: .5rem 0.1rem  1rem $c-text-shadow;
+    text-transform: uppercase;
+  }
+
+  &__subheader {
+    margin: 0;
+    color: $c-midnightblue;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 4rem 0;
+
+    &__header {
+      font-size: 4rem;
+    }
+  }
+
+}
+
+@media (max-width: 550px) {
+  .nav {
+    flex-direction: column;
+  }
+}

@@ -1,6 +1,46 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 // @import 'font-awesome';
+
+// COLORS
+$c-midnightblue: #083451;
+$c-blue: #0979cd;
+$c-readablegrey: #666;
+$c-white: #fff;
+$c-thinborder: #ddd;
+$c-clear: rgba(0, 0, 0, 0);
+$c-text-shadow: rgba(0, 0, 0, 0.5);
+
+$c-transparentblue: rgba(7, 80, 135, 0.7);
+$c-transparentred: rgba(197, 105, 106, 0.75);
+$c-transparentyellow: rgba(253, 204, 82, 0.65);
+
+// Gradients
+$c-sunset: linear-gradient(330deg, $c-transparentblue,  $c-transparentred 75%, $c-transparentyellow);
+$c-deepwater: linear-gradient($c-transparentblue, $c-transparentblue);
+
+// MEASUREMENTS
+$m-gutter: 5rem;
+
+// imports
 @import 'box-sizing';
+@import 'resets';
+@import 'components/banner';
+@import 'components/popularposts';
+@import 'components/postmain';
+@import 'components/postsidebar';
+@import 'components/footer';
+
+
+// LAYOUT
+.section {
+  padding: 1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin-left: auto;
+  margin-right: auto;
+}
