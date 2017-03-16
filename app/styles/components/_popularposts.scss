@@ -49,6 +49,7 @@
   }
 
   &__image {
+    display: block;
     width: 100%;
     min-height: 21rem;
     object-fit: cover;
